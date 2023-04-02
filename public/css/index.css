@@ -1,0 +1,348 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;  
+}
+
+body{
+    background-color: black;
+}
+.nav{
+    left: 10px;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    z-index: 1000;
+    display: grid;
+    background-color: #DC2026;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+}
+/* .dud{
+    left: 10%;
+} */
+.welcome{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar-logo{
+    display: grid;
+    grid-template-rows: 1rem ;
+}
+.navbar-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 15px 20px 15px;
+}
+.navbar-list a{
+    color: white;
+}
+.nav-li a:hover{
+    color: black;
+    transition: .4s;
+}
+.search-movies{
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.nav-li:not(:last-child):hover {
+    transform: scale(1.2) translateY(8px);
+    transition: 0.4s;
+}
+
+
+
+.nav-li:hover input{
+    width: 170px;
+}
+
+.nav-li input{
+    width: 0;
+    outline: none;
+    font-weight: 500;
+    transition: 0.8s;
+    border-radius: 5px ;
+    border: none;
+    padding: 10px 0 10px 0;
+}
+.nav-li a{
+    padding: 10px;
+    align-items: center;
+}
+
+  .slider{
+    width: 70%;
+    height: 500px; 
+    position: relative; 
+    left: 15%;
+    top: 190px;
+    background-image: url(../asset/thor-love-and-thunder-5k-wd.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 5px 5px white; 
+    animation:slider 20s infinite;
+} 
+ @keyframes slider{
+    0%{
+        background-image: url(../asset/thor-love-and-thunder-5k-wd.jpg);
+        
+    }
+    35%{
+        background-image: url(../asset/2022-spiderman-no-way-home-5k-5e.jpg);
+    }
+    75%{
+        background-image: url(../asset/spider-man-no-way-home-movie-5k-fd.jpg);
+    }
+
+}
+/* .grid-moview{
+    margin-top: 15%;
+    width: 80%;
+    margin-left: 10%;
+} */
+/* .btn {
+    position: relative;
+    background: #46b7d5;
+    border: none;
+    text-align: center;
+  } */
+  /* .movie-body a :hover{
+        transform: translateX(10px);
+    } */
+  /* .btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: 0.4s;
+    background: #46b7d5;
+  } */
+
+  
+
+  .container-poster{
+    position: relative;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content:space-between; */
+    padding: 100px;
+    color: white;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap: 1.5rem;
+  }
+  .item-poster{
+    width: 190px;
+    padding-bottom: 50px;
+    /* margin: 10px; */
+  }
+  .item-poster img{
+    width: 175px;
+    height: 250px;
+  }
+  .item-poster button{
+    background-color: gray;
+    margin: 10px 10px 10px 0px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .rating a{
+    color: gray;
+  }
+  .rating a:nth-child(n+4){
+    color: white;
+  }
+  .item-poster .btn{
+    padding: 7px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #DC2026;
+    color: white;
+  }
+  .btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: 0.4s;
+    background: white;
+    color: #DC2026;
+  }
+
+  /* footer */
+  .main{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px 100px 100px;
+}
+
+.footer{
+    padding: 10px 0;
+}
+.col{
+    width: 25%;
+}
+.col h4{
+    font-size: 1.2rem;
+    color: #D2AA5A;
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: #DC2026;
+
+}
+.col ul li:not(last-child){
+    margin-bottom: 15px;
+}
+.col ul li a{
+    color: #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a:hover{
+    color: #fff;
+    transform: translateX(-12px);
+}
+
+.col .social{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .social a{
+    height: 40px;
+    width: 40px;
+    background: #D2AA5A;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    transition: .4s;
+}
+.col .social a:hover{
+    transform: scale(1.2);
+    color: #1e1c2a;
+    background: #DC2026;
+}
+
+/* .col .social a:first-child{
+    background-color: #3A4F86;
+}
+.col .social a:nth-child(2){
+    background-color: #14AAEF;
+}
+.col .social a:nth-child(3){
+    background-color: #3A4F86;
+}
+.col .social a:nth-child(4){
+    background-color: #FE2628;
+} */
+
+
+
+/* .slider{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 15%;
+    top: 150px;
+    align-items: center;
+}
+.slides{
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+
+.slides  input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 900px;
+    height: 400px;
+}
+.nav-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* dot button below slider  */
+/* .manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: gray;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -35%;
+}
+#radio3:checked ~ .first{
+    margin-left: -75%;
+}
+.slide-auto{
+    position: absolute;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.slide-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.slide-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~.slide-auto .auto-btn1{
+    background: gray;
+}
+#radio2:checked ~.slide-auto .auto-btn2{
+    background: gray;
+}
+#radio3:checked ~.slide-auto .auto-btn3{
+    background: gray;
+} */ 
+
+
+
